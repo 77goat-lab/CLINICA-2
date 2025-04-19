@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultorio Médico - Salud Vital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <header class="bg-blue-600 text-white p-4">
+    <nav class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Consultorio Salud Vital</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#" class="hover:text-yellow-300">Inicio</a></li>
+        <li><a href="#" class="hover:text-yellow-300">Servicios</a></li>
+        <li><a href="#" class="hover:text-yellow-300">Citas</a></li>
+        <li><a href="#" class="hover:text-yellow-300">Contactar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container mx-auto py-10">
+
+    <!-- Bienvenida y login -->
+    <section class="flex justify-center space-x-8">
+      <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h2 class="text-2xl font-semibold mb-4 text-center">¡Bienvenido a tu Consultorio Médico!</h2>
+        <form action="#" method="POST">
+          <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
+          <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded-md mb-4" placeholder="Tu correo electrónico">
+
+          <label for="password" class="block text-sm font-medium text-gray-700">Contraseña</label>
+          <input type="password" id="password" name="password" class="w-full p-2 border border-gray-300 rounded-md mb-4" placeholder="Tu contraseña">
+
+          <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-md mt-4">Iniciar Sesión</button>
+        </form>
+        <div class="mt-4 text-center">
+          <a href="#" class="text-sm text-blue-600">¿No tienes cuenta? Regístrate</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Citas médicas -->
+    <section class="my-12">
+      <h2 class="text-3xl font-semibold text-center mb-6">Agenda tu cita médica</h2>
+      <div class="flex justify-center">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-xl">
+          <h3 class="text-xl font-semibold mb-4">Selecciona tu especialidad</h3>
+          <select class="w-full p-2 border border-gray-300 rounded-md mb-4">
+            <option>General</option>
+            <option>Pediatría</option>
+            <option>Cardiología</option>
+            <option>Dermatología</option>
+          </select>
+
+          <label for="date" class="block text-sm font-medium text-gray-700">Fecha de la cita</label>
+          <input type="date" id="date" name="date" class="w-full p-2 border border-gray-300 rounded-md mb-4">
+
+          <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-md mt-4">Agendar Cita</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-blue-600 text-white p-4 mt-10">
+    <div class="container mx-auto text
